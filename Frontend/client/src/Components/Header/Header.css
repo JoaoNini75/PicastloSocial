@@ -1,0 +1,18 @@
+.MuiButton-root.custom-button {
+    background-color: rgba(148, 255, 225, 0.5);
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.MuiButton-root.custom-button:hover {
+    background-color: rgba(88, 143, 127, 0.25);
+}
+
+.custom-box {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2rem;
+}

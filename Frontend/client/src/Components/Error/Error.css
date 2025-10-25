@@ -1,0 +1,29 @@
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures content can move down */
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px; /* Add vertical spacing to move content down */
+}
+
+.not-found-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.not-found-image {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.not-found-text {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.75);
+}

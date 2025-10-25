@@ -1,0 +1,32 @@
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.profile-info {
+    margin-top: 1px;
+}
+
+.divider {
+    margin: 16px 0;
+}
+
+.pipelines-section, .posts-section {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 16px;
+}
+
+.pipelines-section .MuiListItemAvatar-root, .posts-section .MuiListItemAvatar-root {
+    background-color: #ffffff00;
+}
+
+.posts-section .MuiListItemAvatar-root {
+    background-color: #ffffff00;
+}

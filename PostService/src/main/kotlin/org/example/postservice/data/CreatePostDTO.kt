@@ -1,0 +1,36 @@
+package org.example.postservice.data
+
+import com.fasterxml.jackson.annotation.JsonProperty
+import jakarta.validation.constraints.Min
+import io.swagger.v3.oas.annotations.media.Schema
+
+data class CreatePostDTO(
+
+    @Schema(example = "johnmaster120", required = true, description = "username of the user")
+    @get:JsonProperty("username", required = true) val username: String,
+
+    @Schema(example = "making awesome pictures", required = true, description = "description of the post")
+    @get:JsonProperty("description", required = true) val description: String,
+
+    @get:Min(0L)
+    @Schema(example = "3", required = true, description = "id of the image after using the pipeline")
+    @get:JsonProperty("result_image_id", required = true) val resultImageId: Long,
+
+    @Schema(example = "4", required = true, description = "id of the image before using the pipeline")
+    @get:JsonProperty("original_image_id", required = true) val originalImageId: Long,
+
+    @get:Min(0L)
+    @Schema(example = "5", required = true, description = "id of the pipeline")
+    @get:JsonProperty("pipeline_id", required = true) val pipelineId: Long,
+
+    @Schema(
+        example = "0",
+        required = true,
+        description = "Visibility of the post: 0 - private, 1 - friends, 2 - public, 10x where x is group ID for specific groups"
+    )
+    @get:JsonProperty("visibility", required = true)
+    val visibility: Int
+
+) {
+    constructor() : this("", "", 0, 0, 0, 0)
+}

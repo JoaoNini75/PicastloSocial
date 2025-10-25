@@ -1,0 +1,18 @@
+### Send POST request with json body
+POST http://192.168.1.65:62151/userService/user
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "johnNini",
+  "password_hash": "pwd1",
+  "email": "john@gmail.com",
+  "created_at": "2007-12-03T10:15:30",
+  "role": "Default"
+}
+
+### GET request to example server
+GET http://192.168.1.65:62151/userService/user/1
+
+### List users
+GET http://192.168.1.65:62151/userService/user
