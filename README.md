@@ -1,11 +1,11 @@
 # CIAI Project
 
-## Authors
+# Authors
 * João Nini - https://github.com/JoaoNini75
 * Guilherme Santana - https://github.com/GuiSantana08
 * Pedro Cavaleiro - https://github.com/Plasmified
 
-## Professor
+# Professor
 * João Costa Seco - https://github.com/costaseco
 
 # Project Assignment
